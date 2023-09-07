@@ -4,6 +4,10 @@
   "description": "Blockchain SDK template",
   "main": "index.js",
   "scripts": {
+    "build": "npm run build:core && npm run build:network && npm run build:provider",
+    "build:core": "npm run build --workspace=core",
+    "build:network": "npm run build --workspace=network",
+    "build:provider": "npm run build --workspace=provider",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "rodolfopietro97",
