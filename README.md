@@ -22,3 +22,7 @@ It will create a nodejs project and then add in the workspace to package.json of
 ### Work in a workspace
 * npm {command} -w {workspace_path}
    * -e.g.- npm install typescript --save-dev -w ./packages/core
+
+### Install dependencies (MAIN PROJECT)
+* npm install
+   * It will install dependencies for all projects in packages
