@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Network part of blockchain SDK",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
