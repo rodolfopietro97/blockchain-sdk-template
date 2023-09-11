@@ -9,6 +9,10 @@
     "build:core": "yarn workspace core run build",
     "build:network": "yarn workspace network run build",
     "build:provider": "yarn workspace provider run build",
+    "clean": "yarn run clean:core && yarn run clean:network && yarn run clean:provider",
+    "clean:core": "yarn workspace core run clean",
+    "clean:network": "yarn workspace network run clean",
+    "clean:provider": "yarn workspace provider run clean",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "rodolfopietro97",
@@ -18,7 +22,7 @@
   },
   "workspaces": {
     "packages": [
-      "packages/core"
+      "packages/*"
     ]
   }
 }
