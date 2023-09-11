@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "Blockchain SDK template",
   "main": "index.js",
+  "private": true,
   "scripts": {
-    "build": "npm run build:core && npm run build:network && npm run build:provider",
-    "build:core": "npm run build --workspace=core",
-    "build:network": "npm run build --workspace=network",
-    "build:provider": "npm run build --workspace=provider",
+    "build": "yarn run build:core && yarn run build:network && yarn run build:provider",
+    "build:core": "yarn workspace core run build",
+    "build:network": "yarn workspace network run build",
+    "build:provider": "yarn workspace provider run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "rodolfopietro97",
@@ -15,9 +16,9 @@
   "devDependencies": {
     "typescript": "^5.2.2"
   },
-  "workspaces": [
-    "packages/core",
-    "packages/network",
-    "packages/provider"
-  ]
+  "workspaces": {
+    "packages": [
+      "packages/core"
+    ]
+  }
 }
